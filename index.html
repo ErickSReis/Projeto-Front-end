@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque</title>
+    <link rel="stylesheet" href="assets/styles.css/style.css"> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+<! ============== Caixa de pesquisa ==============-->
+    <div class="search">
+        <div class="search-box">
+            <input class="search-text" name="" placeholder="Nome ou código do produto">
+            <a class="search-btn" href="#"><img src="icons/search-button.svg"></a>
+        </div>
+    </div>
+
+<! ============== Barra lateral ==============-->
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <a href="#"><img src="icons/Logo UCSal.svg" alt="Logo Católica"></a>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <a href="#">
+                <span class="items-list">Lista de itens</span>
+                <img src="icons/bx-list-ul.svg">
+                </a> 
+            </li>
+
+            <li>
+                <a href="#">
+                <span class="requests">Solicitações</span>
+                <img src="icons/bx-info-circle.svg">
+                </a> 
+            </li>
+        </ul>
+    </div>
+
+<! ============== Adicionar produtos ==============-->
+    <div class="sidebar-add-item">
+        <form class="formulário" id="form">
+
+            <h1 class="título">Adicionar produto ao estoque</h1>
+
+            <div>
+                <label for="codigo">Código:</label>
+                <br>
+                <input style="width: 100px; margin-bottom: 10px;" class="input" id="codigo" required>
+            </div>
+            
+            <div>
+                <label class="texto" for="nome">Nome do produto:</label>
+                <input style="width: 350px; margin-bottom: 10px;" class="input" id="nome" required>
+            </div>
+
+            <div>
+                <label class="texto" for="quantidade">Quantidade:</label>
+                <br>
+                <input style="width: 100px; margin-bottom: 10px;" class="input" id="quantidade" required>
+            </div>
+
+            <div>
+                <label class="texto" for="medida">Und. de Medida:</label>
+                <br>
+                <input style="width: 100px; margin-bottom: 10px;" class="input" id="medida" required>
+            </div>
+            <button class="add-btn" type="submit">Adicionar</button>
+        </form>
+   
+    </div>
+
+<! ============== lista de produtos ==============-->
+    <main>    
+        <table id="tabela" class="content-table">
+            <thead>
+                <tr>
+                    <th style="width: 80px;">Código</th>
+                    <th style="width: 600px;">Nome do produto</th>
+                    <th style="width: 120px;">Quantidade</th>
+                    <th style="width: 80px;">Medida</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
